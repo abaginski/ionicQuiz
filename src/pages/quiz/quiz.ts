@@ -12,6 +12,7 @@ export class QuizPage {
   buttonText:string = "Nächste Frage";
 
 
+
   constructor(public navCtrl: NavController) {   
   }
 
@@ -40,4 +41,5 @@ export class QuizPage {
     }
     this.ladebalkenWidth = (currentQ / this.numberQ) * 100;
   }
+
 }

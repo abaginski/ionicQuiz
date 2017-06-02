@@ -38,11 +38,11 @@ input[type="radio"] + label span {
     height:18px;
     margin:1px 20px 30px 10px;
     vertical-align:middle;
-    background:url(../assets/img/bullet_off.png) no-repeat;
+    background:url("../assets/img/bullet_off.png") no-repeat;
     cursor:pointer;
 }
 input[type="radio"]:checked + label span {
-    background:url(../assets/img/bullet_on.png) no-repeat;
+    background:url("../assets/img/bullet_on.png") no-repeat;
 }
 
 
@@ -163,6 +163,7 @@ h1 {
 	border:1px solid $primary;
 	z-index:10;
 	height:14px;
+	margin-top:10px;
 }
 
 #geladen {

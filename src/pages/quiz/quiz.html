@@ -9,6 +9,7 @@
   <header>
   </header>
   <h1 class="btn_h1">Frage</h1> <h1>{{ questionNumber }}</h1><br><br>
+  
   <ion-slides (ionSlideDidChange)="questionChanged()">
     <ion-slide>
     <table>
@@ -25,29 +26,29 @@
           </tr>
                   <tr>
             <td>
-                        <input type="radio" name="antworten[1]" value="empty" style="display:none;" checked />
-              <input type="radio" name="antworten[1]" value="a1" id="a1" /><label for="a1"><span></span></label>
+                        <input type="radio" name="antworten[1]" value="empty" style="display:none;" />
+              <input type="radio" name="antworten[1]" value="a1" id="a1" [checked]="this.f1 == 'a1'" /><label for="a1"><span></span></label>
             </td>
             <td>
-              <label for="a1"><span></span>ca. 8.000</label><br /><br />
-            </td>
-          </tr>
-                  <tr>
-            <td>
-                        <input type="radio" name="antworten[1]" value="empty" style="display:none;" checked />
-              <input type="radio" name="antworten[1]" value="a2" id="a2" /><label for="a2"><span></span></label>
-            </td>
-            <td>
-              <label for="a2"><span></span>ca. 50.000</label><br /><br />
+              <label for="a1" (click)="this.f1 = 'a1'"><span></span>ca. 8.000</label><br /><br />
             </td>
           </tr>
                   <tr>
             <td>
-                        <input type="radio" name="antworten[1]" value="empty" style="display:none;" checked />
-              <input type="radio" name="antworten[1]" value="a3" id="a3" /><label for="a3"><span></span></label>
+                        <input type="radio" name="antworten[1]" value="empty" style="display:none;" />
+              <input type="radio" name="antworten[1]" value="a2" id="a2" [checked]="this.f1 == 'a2'" /><label for="a2"><span></span></label>
             </td>
             <td>
-              <label for="a3"><span></span>ca. 80.000</label><br /><br />
+              <label for="a2" (click)="this.f1 = 'a2'"><span></span>ca. 50.000</label><br /><br />
+            </td>
+          </tr>
+                  <tr>
+            <td>
+                        <input type="radio" name="antworten[1]" value="empty" style="display:none;" />
+              <input type="radio" name="antworten[1]" value="a3" id="a3" [checked]="this.f1 == 'a3'" /><label for="a3"><span></span></label>
+            </td>
+            <td>
+              <label for="a3"  (click)="this.f1 = 'a3'"><span></span>ca. 80.000</label><br /><br />
             </td>
                   </tr>
       </table>
