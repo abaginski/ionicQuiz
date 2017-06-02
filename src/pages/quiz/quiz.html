@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Quiz
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+  <header>
+  </header>
+  <h1 class="btn_h1">Frage</h1> <h1>{{ questionNumber }}</h1><br><br>
+  <ion-slides (ionSlideDidChange)="questionChanged()">
+    <ion-slide>
+    <table>
+                <tr>
+                    <th colspan="2">
+                        
+                      </th>
+                  </tr>
+          <tr>
+            <th colspan="2">
+              <section>Wie viele Menschen arbeiten in den österreichischen Pflegeberufen?</section>
+                          <br>
+            </th>
+          </tr>
+                  <tr>
+            <td>
+                        <input type="radio" name="antworten[1]" value="empty" style="display:none;" checked />
+              <input type="radio" name="antworten[1]" value="a1" id="a1" /><label for="a1"><span></span></label>
+            </td>
+            <td>
+              <label for="a1"><span></span>ca. 8.000</label><br /><br />
+            </td>
+          </tr>
+                  <tr>
+            <td>
+                        <input type="radio" name="antworten[1]" value="empty" style="display:none;" checked />
+              <input type="radio" name="antworten[1]" value="a2" id="a2" /><label for="a2"><span></span></label>
+            </td>
+            <td>
+              <label for="a2"><span></span>ca. 50.000</label><br /><br />
+            </td>
+          </tr>
+                  <tr>
+            <td>
+                        <input type="radio" name="antworten[1]" value="empty" style="display:none;" checked />
+              <input type="radio" name="antworten[1]" value="a3" id="a3" /><label for="a3"><span></span></label>
+            </td>
+            <td>
+              <label for="a3"><span></span>ca. 80.000</label><br /><br />
+            </td>
+                  </tr>
+      </table>
+    </ion-slide>
+    <ion-slide>
+      <h1>ZWEITE
+      </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>dritte
+      </h1>
+    </ion-slide>
+  </ion-slides>
+
+            <button id="next-q" class="submitbtn" ion-button color="positive" block (click)="slideForMe()">
+            {{ buttonText }}
+          </button>
+<div id='ladebalken'>
+  <div id='geladen' [style.width.%]="ladebalkenWidth"></div>
+</div>
+</ion-content>

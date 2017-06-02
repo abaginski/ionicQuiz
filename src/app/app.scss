@@ -14,3 +14,178 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+
+$primary: #cb061d;
+
+body {
+	font-family:Verdana, 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size:100%;
+	font-weight:400;
+    overflow: hidden;
+}
+
+
+input[type=radio] {
+	display:none;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:18px;
+    height:18px;
+    margin:1px 20px 30px 10px;
+    vertical-align:middle;
+    background:url(../assets/img/bullet_off.png) no-repeat;
+    cursor:pointer;
+}
+input[type="radio"]:checked + label span {
+    background:url(../assets/img/bullet_on.png) no-repeat;
+}
+
+
+input[type=submit], .btn, .btn_h1, button {
+  margin-top:20px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$primary+0,35adcc+84,87c0d0+100 */
+	background: rgb(206,7,23); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(203,72,69,1) 0%, rgba(206,7,23,1) 84%, rgba(203,72,69,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(203,72,69,1) 0%,rgba(206,7,23,1) 84%,rgba(203,72,69,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(203,72,69,1) 0%,rgba(206,7,23,1) 84%,rgba(203,72,69,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary', endColorstr='$primary',GradientType=0 ); /* IE6-9 */
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 6px 12px 6px 12px;
+  text-decoration: none;
+  border:2px solid #f0efea;
+  width:auto;  
+}
+
+.btn_h1, .btn_h1 ~ h1 {
+	display:inline;
+}
+
+.btn_h1 {
+	border-radius:8px;
+	padding:2px 8px;
+	margin-right:7px;
+	border:0;
+}
+
+
+.special {
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+
+
+button:hover, .btn:hover, button:active {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b7c9ce+0,35adcc+84,87c0d0+100 */
+background: $primary; /* Old browsers */
+  text-decoration: none;
+}
+
+label, button, input[type=button] {
+	cursor:pointer;
+}
+table {
+	width:100%;
+}
+tr > td:first-child {
+	width:2%;
+}
+
+td, th {
+	text-align:left;
+}
+
+
+#maintext {
+	display:block;
+}
+
+#article_1 {
+	display:block;
+}
+
+header {
+	background:url(../assets/img/logo.png) no-repeat left;
+	height:128px;
+	//margin-bottom: 50px;
+}
+
+ion-content {
+	position:relative;
+	//margin:-11px auto 0 auto;
+	//padding:40px;
+	box-shadow:0px 84px 78px #f0efea inset;
+	border:3px solid #f0efea;
+}
+
+/* SHAME! */
+#page1 {
+    overflow:hidden;
+}
+
+ion-content a {
+	color:$primary;
+	text-decoration:none;
+	font-size:smaller;
+}
+
+.makemebigger {
+	font-size:medium !important;
+}
+
+ion-content a:hover {
+	text-decoration:underline;
+}
+
+#footer {
+	text-align:center;
+	margin-top:50px;
+	opacity:0.5;
+}
+
+h1 {
+	color: $primary;
+	font-weight:bold;
+	font-size:120%;
+}
+
+#ladebalken {
+	width:100%;
+	background:white;
+	border:1px solid $primary;
+	z-index:10;
+	height:14px;
+}
+
+#geladen {
+	height:12px;
+	z-index:5;
+	padding:2px;
+	background:rgba(206,7,23,0.6);
+}
+
+.back-button {
+    color:white;
+}
+
+.swiper-slide {
+    display: unset; 
+}
+
+ion-slides {
+    height:auto;
+    margin: 20px 0;
+}
+
+.button-ios.activated {
+    background: rgba(206,7,23,0.6);
+
+}
